@@ -1,0 +1,42 @@
+.footer-fild{
+    background-image: linear-gradient(to right, #222c22 ,#564a4a, #382e36);
+    height: 488px;
+}
+
+.footer-icon-fiild{
+    margin-top: 18px;
+    margin-left: 23px;
+}
+
+
+.footer-anchore{
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 39px;
+    color: white;
+    margin-left: 32px;
+}
+
+.flow{
+    margin-top: 58px;
+    margin-left: 74px;
+    font-size: 31px;
+    color: white;
+    font-family: initial;
+    letter-spacing: 5px;
+}
+
+.address{
+    color: white;
+    margin-left: 68px;
+    font-family: emoji;
+    letter-spacing: 4px;
+    margin-top: 23px;
+}
+
+.general{
+    list-style: none;
+    color: white;
+    margin-left: 55px;
+    margin-top: 13px;
+}

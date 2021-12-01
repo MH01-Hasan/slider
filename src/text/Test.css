@@ -1,0 +1,56 @@
+/* .h-body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: #000;
+
+}
+
+h1{
+    position: relative;
+    margin: 20px 0 0 ;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+
+}
+h1:before{
+    content: "";
+    position: absolute;
+    left:110%;
+    width:120%;
+    height: 100%;
+    background:linear-gradient(90deg,transparent 0%,#000 5%, #000 100%);
+    animation: animate 5.5s linear forwards;
+    animation-delay: 2s;
+}
+@keyframes animate{
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: -20%;
+    }
+
+}
+
+h1 span{
+    color: red;
+}
+ video{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: 2;
+     pointer-events: none;
+     mix-blend-mode: screen;
+
+
+
+ } */
