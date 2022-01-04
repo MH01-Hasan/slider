@@ -1,15 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Text from './text/Text';
-import Footer from './Footer/Footer';
+import BigProject from './component/BigProject/BigProject';
+import Ourteam from './component/Ourteam/Ourteam';
+
+
 
 
 function App() {
   return (
   <div >
-    <Footer></Footer>
-
-
+    <Ourteam></Ourteam>
+    <BigProject></BigProject>
   </div>
  
   );
