@@ -1,0 +1,16 @@
+.footer-fild{
+    background-color: black;
+    height: 176px;
+    font-family: serif;
+    color: #ffffffa8;
+    text-align: center;
+}
+
+.sociel-icon{
+    font-size: 21px;
+    margin: 8px;
+}
+
+.sociel-icon:hover{
+    color: rgb(255 7 110);
+}

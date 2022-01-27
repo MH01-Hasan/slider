@@ -1,16 +1,11 @@
 
 import './App.css';
-import BigProject from './component/BigProject/BigProject';
-import Ourteam from './component/Ourteam/Ourteam';
-
-
-
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
   <div >
-    <Ourteam></Ourteam>
-    <BigProject></BigProject>
+    <Footer></Footer>
   </div>
  
   );
