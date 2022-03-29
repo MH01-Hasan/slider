@@ -1,32 +1,50 @@
-import React from 'react';
-import './Footer.css'
+
+import React, { useState } from 'react';
+import { useForm } from "react-hook-form";
+import Weather from '../Weather/Weather';
 
 const Footer = () => {
-    return (
-       <div className='footer-fild'>
-            <div className='row pt-5'>
-            <div className='col-lg-4 col-sm-12'>
-                <h1>hello</h1>
+  const [conutry, setCountry]= useState({});
+  // const[value, setValue] = useState("")
+  // console.log("hello",value)
 
-            </div>
-            <div className='col-lg-4 col-sm-12'>
-            <h1>hello</h1>
+  const { register, handleSubmit,reset} = useForm();
+  
+  
+  const onSubmit = data =>{
+    // setValue(data.conutry)
+    fetch(`https://restcountries.com/v3.1/name/${data.conutry.toLowerCase()}`)
+    .then(res => res.json())
+    .then(result => setCountry(result))
+    reset()
+    };
+  
 
+  return (
+    <div className='container mx-auto'>
+         <h1>Searce Your Country  Name</h1>
+          <form onSubmit={handleSubmit(onSubmit)}>
+          <input {...register("conutry")} required/>
+          <input type="submit" />
+        </form>
+      
+        { conutry.length &&
+              <div className='mt-5'>
+                
+            {
+              conutry.map(result => (<Weather
+             
+                result={result}
+              >
 
-            </div>
-            <div className='col-lg-4 col-sm-12'>
-              <h5>FOllOW US</h5>
-              <i class="fab fa-facebook-f   sociel-icon "></i>
-              <i class="fab fa-twitter  sociel-icon "></i>
-              <i class="fab fa-instagram-square  sociel-icon "></i>
-              <i class="fab fa-youtube  sociel-icon "></i>
-
-
-            </div>
-            
-        </div>
-       </div>
-    );
+              </Weather>
+              ))}
+          </div>
+        }
+         
+    </div>
+  );
 };
 
 export default Footer;
+

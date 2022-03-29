@@ -1,0 +1,11 @@
+.model-body{
+    background-image: url(https://cdn.weatherapi.com/weather-widget/img/weatherapi-backgrounds/4_widget3.png);
+    overflow: hidden;
+    background-position: bottom;
+    color: #ffff;
+    height: 327px;
+}
+
+.model-fild{
+    background-color: #b9f0f9;
+}

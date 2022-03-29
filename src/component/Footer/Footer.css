@@ -1,16 +1,8 @@
-.footer-fild{
-    background-color: black;
-    height: 176px;
-    font-family: serif;
-    color: #ffffffa8;
-    text-align: center;
-}
+/* .whether-cover{
+    background-image: url(/img/weatherapi-backgrounds/4_widget3.png);
+    border-radius: 10px;
+    overflow: hidden;
+} */
+ 
+  
 
-.sociel-icon{
-    font-size: 21px;
-    margin: 8px;
-}
-
-.sociel-icon:hover{
-    color: rgb(255 7 110);
-}
