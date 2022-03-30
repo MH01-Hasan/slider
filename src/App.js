@@ -1,11 +1,14 @@
 
 import './App.css';
-import Footer from './component/Footer/Footer';
+
+import TaskTwo from './component/TaskTwo/TaskTwo';
+
+
 
 function App() {
   return (
   <div >
-    <Footer></Footer>
+    <TaskTwo></TaskTwo>
   </div>
  
   );
