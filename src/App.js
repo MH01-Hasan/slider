@@ -1,14 +1,15 @@
 
 import './App.css';
+import Calculator from './component/Calculator/Calculator';
 
-import TaskTwo from './component/TaskTwo/TaskTwo';
+
 
 
 
 function App() {
   return (
   <div >
-    <TaskTwo></TaskTwo>
+    <Calculator></Calculator>
   </div>
  
   );
